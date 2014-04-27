@@ -1,0 +1,26 @@
+#brdmenu {
+	POSITION: relative; 
+	HEIGHT: 2em; 
+	MARGIN: 0; 
+	PADDING:0
+}
+#brdmenu ul {
+	PADDING: 0 0 0 1em;
+	POSITION: absolute;
+	WIDTH: 100%;
+}
+#brdmenu LI A {
+	TEXT-DECORATION: none;
+	FLOAT: left; 
+	PADDING: 4px 0.5em 7px 0.5em;
+}
+#brdmenu LI.isactive A, #brdmenu LI A:hover {
+	TEXT-DECORATION: none;
+}
+
+#brdmenu LI.isactive A {
+	BACKGROUND: url(actmark.gif) repeat-x center bottom
+}
+
+#brdmenu A:link, #brdmenu A:visited {COLOR: #fff}
+#brdmenu A:hover {COLOR: #ccc}

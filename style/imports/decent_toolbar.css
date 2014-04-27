@@ -1,0 +1,49 @@
+/*--- drop-down menu ---*/
+
+#buttonmenu {font-size:1em; padding-bottom:4px; width:100%;float:left; clear:right; background:#eee;}
+#buttonmenu ul {padding:0; margin:0; list-style-type:none; height:2em; background:transparent;}
+#buttonmenu ul ul {width:15em;}
+
+/*   top list items*/
+#buttonmenu ul li {float:left; height:2em; line-height:2em; display:block;}
+
+/*   sub level list items */
+#buttonmenu ul ul li {display:block;width:12em;height:auto; line-height:1em;}
+
+/*   links for the top level */
+#buttonmenu a, #buttonmenu a:visited {display:block; float:left; height:100%; width:auto; font-size:1em; text-decoration:none; color:#000; background:#ddd url(../../img/post/bg.gif) center center; padding:0 0.8em 0 0.8em; border-left:1px solid #eee; border-right:1px solid #aaa; border-top:1px solid #eee; border-bottom:1px solid #aaa; }
+* html #buttonmenu a, * html #buttonmenu a:visited {width:11em; w\idth:auto;}
+
+/*   links for the sub level  */
+#buttonmenu ul ul a, #buttonmenu ul ul a:visited {display:block; /*background:#ddd;*/ background:transparent url(../../img/post/opaque00.png); color:#000; width:12em; height:100%; line-height:1em; padding:0.5em 1em; border-bottom:1px solid #aaa; }
+* html #buttonmenu ul ul a, * html #buttonmenu ul ul a:visited  {background:transparent url(../../img/post/opaque00.gif); width:14em; w\idth:12em;}
+
+/*   the table so that it takes no part in the layout - required for IE to work */
+#buttonmenu table {border-collapse:collapse; padding:0; margin:-1px; width:0; height:0; font-size:1em; z-index:1;}
+
+/*   style the sub level 1 background */
+#buttonmenu ul :hover a.sub1 {background:#999;}
+
+/*   hovers */
+* html #buttonmenu a:hover {color:#000;background:#bbb; position:relative; z-index:100;}
+#buttonmenu li:hover {position:relative;}
+#buttonmenu :hover > a {color:#000;background:#bbb;}
+* html #buttonmenu ul ul a:hover{color:#000;background:#bbb; position:relative; z-index:110;}
+#buttonmenu ul ul li:hover {position:relative;}
+#buttonmenu ul ul :hover > a {color:#000;background:#bbb;}
+
+/*   hide and show the sub levels  */
+#buttonmenu ul ul {visibility:hidden; position:absolute; height:0;top:2em; left:0; width:14em;}
+#buttonmenu ul :hover ul{visibility:visible; height:auto; padding:0 3em 3em 3em; background:transparent; left:-3em;}
+* html #buttonmenu ul ul {left:-1px; margin-left:-1px;}
+
+/*   color picker */
+#buttonmenu #colorcontent li {width:112px;}
+#buttonmenu #colorcontent li a {width:12px;height:12px;padding:0;}
+
+
+/*--- file input ---*/
+
+#divAttachRules {margin-bottom: 10px;}
+DIV.floated {margin: 10px 0;} 
+

@@ -1,0 +1,21 @@
+/****************************************************************/
+/* 1. IMPORTED STYLESHEETS */
+/****************************************************************/
+
+/* Import the basic setup styles */
+@import url(imports/base.css);
+/* Import the layout */
+@import url(imports/w2_layout.css);
+/* Import the editor toolbar and other post features */
+@import url(imports/decent_toolbar.css);
+/* Import the colour scheme */
+@import url(Cold_PE/Cold_PE_cs.css);
+/* Import the tabbed main menu */
+@import url(imports/tabs3.css);
+
+#punwrap {MARGIN: auto; MARGIN-TOP: 0; width: 950px}
+
+#punindex #brdtitle {HEIGHT: 70px; BACKGROUND: url(Cold_PE/img/cold-logo.jpg) no-repeat 12px 12px}
+#punindex #brdtitle H1 {MARGIN-TOP: 16px}
+#punindex #brdtitle H1 SPAN {PADDING-LEFT: 76px}
+#punindex #brdtitle P SPAN {PADDING-LEFT: 76px}
